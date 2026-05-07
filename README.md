@@ -37,6 +37,31 @@ Intent flows: Semantic → GL(9) transport → AVX-512 machine code.
 | Python framework | [polyformalism-a2a-python](https://github.com/SuperInstance/polyformalism-a2a-python) |
 | JS port | [polyformalism-a2a-js](https://github.com/SuperInstance/polyformalism-a2a-js) |
 
+## Honest Framework Status (2026-05-07)
+
+After red team attack and independent review:
+
+**Proven and verified:**
+- INT8 soundness (Galois connection between interval sublattices)
+- XOR isomorphism (bijective order isomorphism, proven)
+- dim H⁰ = 9 for constraint trees (proven)
+- 3.17× measured speedup on real hardware (AVX-512, 5-run)
+- 0/100M differential mismatches
+- Negative knowledge as cross-domain principle (4.8/5 confidence)
+
+**Conjectured, not proven:**
+- Intent-Holonomy Duality (one direction partially proven, converse has fundamental obstacle)
+- Consistency-Holonomy Correspondence (plausible but unproven)
+- Temporal Galois connections (no poset structure defined — needs formalization)
+
+**Corrected:**
+- 24-bit norm bound was wrong (i32 is correct)
+- D6 orbit count corrected to 13
+- Laman redundancy is asymptotic, not exact for bounded regions
+- Six Galois connections reframed as "unified recognition of shared structure" not "novel discovery"
+
+See [ERRATA](https://github.com/SuperInstance/constraint-theory-math/blob/main/ERRATA.md) for details.
+
 ## License
 
 MIT
